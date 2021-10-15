@@ -1,4 +1,43 @@
+:root{
+    --bg-color: #E3F2FD;
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.vignette{
+    background-color: var(--bg-color);
+    width: 175px;
+    height: 225px;
+    margin: 50px 5px 5px 40px;    
+}
+
+.imgProfil{
+    position: relative;
+    left: -10%;
+    top: -20%;
+    border-radius: 50%;
+    margin-bottom: -20%;
+    margin-right: -10%;
+    width: 150px;
+}
+
+.nom{
+    padding: 0 2px 0 5px;
+}
+
+.email{
+    padding: 0 2px 0 5px;
+    font-size: smaller;
 }
