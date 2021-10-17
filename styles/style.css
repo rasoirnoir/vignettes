@@ -8,11 +8,11 @@
     font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
-.container{
-    width: 50%;
+#container{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
@@ -40,4 +40,41 @@
 .email{
     padding: 0 2px 0 5px;
     font-size: smaller;
+}
+
+
+@media screen 
+  and (max-width: 600px) {
+
+    .nom{
+        font-size: x-small;
+        grid-area: B;
+        align-self: end;
+        justify-self: start;
+    }
+
+    .email{
+        font-size: xx-small;
+        grid-area: C;
+        align-self: start;
+        justify-self: start;
+    }
+
+    .imgProfil{
+        width: 100px;
+        grid-area: A;
+    }
+        
+    .vignette{
+        display: grid;
+        place-items: start;
+        gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "A B"
+            "A C";
+        width: 175px;
+        height: 100px;
+        margin: 25px 5px 5px 20px;
+    }
 }
