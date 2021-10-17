@@ -88,5 +88,6 @@
         width: 200px;
         height: 125px;
         margin: 25px 5px 5px 20px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 20%);
     }
 }
