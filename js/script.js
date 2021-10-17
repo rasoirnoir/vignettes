@@ -1,7 +1,7 @@
 const API_URL = "https://reqres.in/api/users?page=1";
 const API_URL_PAGE = "https://reqres.in/api/users?page=";
-const TEAM = document.getElementById('team');
-const BUTTON = document.querySelector('.pagination');
+const TEAM = document.getElementById('container');
+const BUTTONS = document.querySelectorAll('.pagination');
 
 class User {
     constructor(avatar, email, first_name, last_name) {
@@ -13,19 +13,24 @@ class User {
 
     afficheUser () {
         TEAM.innerHTML +=  `
-        <p>${this.avatar}</p>
-        <p>${this.email}</p>
-        <p>${this.first_name}</p>
-        <p>${this.last_name}</p>
-        <hr/>
+        <section class="vignette">
+            <img src="${this.avatar}" class="imgProfil">
+            <h3 class="nom">${this.first_name}</h3>
+            <p class="email">${this.email}</p>
+        </section>
         `;
     }
 }
 
-BUTTON.addEventListener('click', function (event) {
-    const NUM_PAGE = BUTTON.value;
-    getUsers(API_URL_PAGE+NUM_PAGE);
-});
+
+BUTTONS.forEach(BUTTON => {
+    BUTTON.addEventListener('click', event => {
+        //console.log(BUTTON.value);
+        const NUM_PAGE = BUTTON.value;
+        getUsers(API_URL_PAGE+NUM_PAGE);
+    })
+})
+
 
 function getUsers(api){
     fetch(api)
