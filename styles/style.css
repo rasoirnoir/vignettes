@@ -47,25 +47,37 @@
   and (max-width: 600px) {
 
     .nom{
-        font-size: x-small;
+        font-size: small;
         grid-area: B;
         align-self: end;
         justify-self: start;
+        padding: 0px;
+        margin-right: 3px;;
+        position: relative;
+        left: -20%;
+        overflow-wrap: break-word;
     }
 
     .email{
-        font-size: xx-small;
+        font-size: x-small;
         grid-area: C;
         align-self: start;
         justify-self: start;
+        padding: 0px;
+        position: relative;
+        left: -20%;
+        overflow-wrap: break-word;
     }
 
     .imgProfil{
-        width: 100px;
+        width: 125px;
         grid-area: A;
+        left: -20%;
+        margin-right: -20%;
     }
         
     .vignette{
+        padding: 3px;
         display: grid;
         place-items: start;
         gap: 0px;
@@ -73,8 +85,8 @@
         grid-template-areas: 
             "A B"
             "A C";
-        width: 175px;
-        height: 100px;
+        width: 200px;
+        height: 125px;
         margin: 25px 5px 5px 20px;
     }
 }
