@@ -41,7 +41,7 @@ function getUsers(api){
     .then(responsFormat => {
         console.log(responsFormat);
         const NB_PAR_PAGE = responsFormat.per_page;
-    
+        TEAM.innerHTML = "";
         for(i=0;i<NB_PAR_PAGE;i++){
             const AVATAR = responsFormat.data[i].avatar;
             const EMAIL = responsFormat.data[i].email;
