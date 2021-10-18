@@ -29,7 +29,8 @@
     background-color: var(--bg-color);
     width: 175px;
     height: 225px;
-    margin: 50px 5px 5px 40px;    
+    margin: 50px 5px 5px 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 20%); 
 }
 
 .imgProfil{
@@ -97,6 +98,5 @@
         width: 225px;
         height: 125px;
         margin: 25px 5px 5px 20px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 20%);
     }
 }
