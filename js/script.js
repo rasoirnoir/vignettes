@@ -35,11 +35,11 @@ BUTTONS.forEach(BUTTON => {
 function getUsers(api){
     fetch(api)
     .then((response) => {
-        console.log(response);
+        //console.log(response);
         return response.json();
     })
     .then(responsFormat => {
-        console.log(responsFormat);
+        //console.log(responsFormat);
         const NB_PAR_PAGE = responsFormat.per_page;
         TEAM.innerHTML = "";
         for(i=0;i<NB_PAR_PAGE;i++){
