@@ -13,7 +13,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 50px;
+}
+
+.boutons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    margin: 2px;
 }
 
 .vignette{
@@ -85,7 +94,7 @@
         grid-template-areas: 
             "A B"
             "A C";
-        width: 200px;
+        width: 225px;
         height: 125px;
         margin: 25px 5px 5px 20px;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 20%);
