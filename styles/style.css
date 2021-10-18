@@ -13,7 +13,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 50px;
+}
+
+.boutons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    margin: 2px;
 }
 
 .vignette{
